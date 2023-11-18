@@ -1,0 +1,16 @@
+﻿DataHarvest OCR Software License
+
+1. Copyright and Ownership:
+This software, "DataHarvest OCR", is owned by Alexander Aguilera. All rights reserved. The source code, documentation, and related materials are provided solely for the purpose of viewing and evaluating the quality of the code.
+
+2. Usage Restrictions:
+This software is provided only for viewing purposes. Reproduction, distribution, modification, derivative works, or any commercial or non-commercial use of any part of the software without prior explicit consent from the copyright owner is prohibited.
+
+3. Licensing Contact:
+For any use of the software beyond viewing, including but not limited to modification, integration into other projects, or commercial use, contact the copyright owner at alez.aguilera97@gmail.com to discuss and potentially agree on the terms of a separate license.
+
+4. No Warranty:
+This software is provided "as is", with no warranties of any kind, either expressed or implied. The owner assumes no responsibility for the use of the software.
+
+5. Acceptance of License:
+Viewing and any use of the software implies acceptance of these terms and conditions.
