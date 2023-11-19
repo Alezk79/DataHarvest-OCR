@@ -6,7 +6,7 @@ namespace TextToDigitalCode
     public class QRCoder
     {
         AppSettings config = new AppSettings();
-        public static Bitmap GenerarQR(string datos, string path)
+        public static Bitmap BuildQR(string datos, string path)
         {
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(datos, QRCodeGenerator.ECCLevel.Q);

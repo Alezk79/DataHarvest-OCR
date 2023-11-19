@@ -28,7 +28,6 @@ C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\runtimes\win-x64\native\pdfium.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\runtimes\win-x86\native\pdfium.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\obj\Debug\net7.0-windows\TextToDigitalCode.csproj.CopyComplete
-C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\obj\Debug\net7.0-windows\TextToDigitalCode.Form2.resources
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
@@ -39,7 +38,6 @@ C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\obj\Debug\net7.0-windows\RuFramework.Config.AppSettingsDialog.resources
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\obj\Debug\net7.0-windows\TextToDigitalCode.ConfigManager.ResourceConfig.resources
-C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\TextToDigitalCode.dll.config
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\x86\leptonica-1.82.0.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\x86\tesseract50.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\x64\leptonica-1.82.0.dll
@@ -48,3 +46,4 @@ C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\Tesseract.Drawing.dll
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\tessdata\spa.traineddata
 C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\bin\Debug\net7.0-windows\QRCoder.dll
+C:\Users\soporte\source\repos\CursoNE\TextToDigitalCode\obj\Debug\net7.0-windows\TextToDigitalCode.Monitor.resources

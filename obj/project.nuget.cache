@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/UWLQinO/p2loNvsX+fSJXQ7BCXXL5r/yXrXihwJJ1u+vKscvB+pnxnabX94tpvqFs93D5owwgZfaVXaXtDN6Q==",
+  "dgSpecHash": "vs+vc6G/JWGd5i+WHlnUHyaNVVDMHwnwpfMtkrWIek0q7ntd0EdY2H4aunhm0buyhSTNW50ppVFDil7dXYszMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soporte\\source\\repos\\CursoNE\\TextToDigitalCode\\TextToDigitalCode.csproj",
+  "projectFilePath": "C:\\Users\\soporte\\source\\repos\\CursoNE\\TextToDigitalCode\\DataHarvest-OCR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soporte\\.nuget\\packages\\bblanchon.pdfium.linux\\114.0.5705\\bblanchon.pdfium.linux.114.0.5705.nupkg.sha512",
     "C:\\Users\\soporte\\.nuget\\packages\\bblanchon.pdfium.macos\\114.0.5705\\bblanchon.pdfium.macos.114.0.5705.nupkg.sha512",

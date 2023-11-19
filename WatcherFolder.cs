@@ -3,10 +3,10 @@ using System.Drawing.Imaging;
 
 namespace TextToDigitalCode
 {
-    public class MonitorearCarpeta
+    public class WatcherFolder
     {
 
-        public static void MonitorearFolder(string path, string rectangleDataPath)//rectanguloJson.Text
+        public static void WatchFolder(string path, string rectangleDataPath)//rectanguloJson.Text
         {
             if (!Directory.Exists(path))
             {
@@ -57,7 +57,7 @@ namespace TextToDigitalCode
 
                 var croppedImage = CropImage(bitmap, cropArea);
 
-                string codigo = Tesseract.AplicarOCR(croppedImage, rectangleData.DocumentType, rectangleData.FieldName);
+                string codigo = DataExtractor.ExtractData(croppedImage, rectangleData.DocumentType, rectangleData.FieldName);
 
         pdfDocument.Close();
 

@@ -1,6 +1,6 @@
 ﻿namespace TextToDigitalCode
 {
-    partial class Form1
+    partial class HarvestDesigner
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HarvestDesigner));
             openFileDialog1 = new OpenFileDialog();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel1 = new Panel();
@@ -82,33 +82,29 @@
             tableLayoutPanel1.Controls.Add(panel2, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 27F));
-            tableLayoutPanel1.Size = new Size(845, 592);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(739, 444);
             tableLayoutPanel1.TabIndex = 9;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // panel1
             // 
             panel1.AutoSize = true;
             panel1.Controls.Add(pdfOrigenImage);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(3, 4);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(416, 557);
+            panel1.Size = new Size(363, 418);
             panel1.TabIndex = 6;
             // 
             // pdfOrigenImage
             // 
             pdfOrigenImage.Dock = DockStyle.Fill;
             pdfOrigenImage.Location = new Point(0, 0);
-            pdfOrigenImage.Margin = new Padding(3, 4, 3, 4);
             pdfOrigenImage.Name = "pdfOrigenImage";
-            pdfOrigenImage.Size = new Size(416, 557);
+            pdfOrigenImage.Size = new Size(363, 418);
             pdfOrigenImage.SizeMode = PictureBoxSizeMode.Zoom;
             pdfOrigenImage.TabIndex = 2;
             pdfOrigenImage.TabStop = false;
@@ -130,69 +126,63 @@
             panel2.Controls.Add(Save);
             panel2.Controls.Add(loadPDF);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(425, 4);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(372, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(417, 557);
+            panel2.Size = new Size(364, 418);
             panel2.TabIndex = 7;
-            panel2.Paint += panel2_Paint;
             // 
             // lbl_scale
             // 
             lbl_scale.AutoSize = true;
-            lbl_scale.Location = new Point(-2, 25);
+            lbl_scale.Location = new Point(-2, 27);
             lbl_scale.Name = "lbl_scale";
-            lbl_scale.Size = new Size(50, 20);
+            lbl_scale.Size = new Size(39, 15);
             lbl_scale.TabIndex = 13;
             lbl_scale.Text = "Escala";
+            lbl_scale.Visible = false;
             // 
             // campoLabel
             // 
             campoLabel.AutoSize = true;
-            campoLabel.Location = new Point(3, 205);
+            campoLabel.Location = new Point(3, 154);
             campoLabel.Name = "campoLabel";
-            campoLabel.Size = new Size(119, 20);
+            campoLabel.Size = new Size(96, 15);
             campoLabel.TabIndex = 12;
             campoLabel.Text = "Nombre Campo:";
             // 
             // campotxt
             // 
             campotxt.AccessibleName = "";
-            campotxt.Location = new Point(120, 201);
-            campotxt.Margin = new Padding(3, 4, 3, 4);
+            campotxt.Location = new Point(105, 151);
             campotxt.Name = "campotxt";
-            campotxt.Size = new Size(209, 27);
+            campotxt.Size = new Size(183, 23);
             campotxt.TabIndex = 11;
             campotxt.Tag = "";
-            campotxt.TextChanged += textBox1_TextChanged;
             // 
             // labelTipo
             // 
             labelTipo.AutoSize = true;
-            labelTipo.Location = new Point(3, 167);
+            labelTipo.Location = new Point(3, 125);
             labelTipo.Name = "labelTipo";
-            labelTipo.Size = new Size(145, 20);
+            labelTipo.Size = new Size(115, 15);
             labelTipo.TabIndex = 10;
             labelTipo.Text = "Tipo de Documento:";
             // 
             // tipoDoctxt
             // 
             tipoDoctxt.AccessibleName = "";
-            tipoDoctxt.Location = new Point(142, 163);
-            tipoDoctxt.Margin = new Padding(3, 4, 3, 4);
+            tipoDoctxt.Location = new Point(124, 122);
             tipoDoctxt.Name = "tipoDoctxt";
-            tipoDoctxt.Size = new Size(209, 27);
+            tipoDoctxt.Size = new Size(183, 23);
             tipoDoctxt.TabIndex = 9;
             tipoDoctxt.Tag = "";
-            tipoDoctxt.TextChanged += tipoDoctxt_TextChanged;
             // 
             // croppedImage
             // 
             croppedImage.Dock = DockStyle.Bottom;
-            croppedImage.Location = new Point(0, 264);
-            croppedImage.Margin = new Padding(3, 4, 3, 4);
+            croppedImage.Location = new Point(0, 198);
             croppedImage.Name = "croppedImage";
-            croppedImage.Size = new Size(417, 293);
+            croppedImage.Size = new Size(364, 220);
             croppedImage.TabIndex = 0;
             croppedImage.TabStop = false;
             // 
@@ -201,25 +191,24 @@
             labelWidth.AutoSize = true;
             labelWidth.Location = new Point(0, 0);
             labelWidth.Name = "labelWidth";
-            labelWidth.Size = new Size(139, 20);
+            labelWidth.Size = new Size(111, 15);
             labelWidth.TabIndex = 3;
             labelWidth.Text = "Anchura del recorte";
             // 
             // labelHeight
             // 
             labelHeight.AutoSize = true;
-            labelHeight.Location = new Point(165, 0);
+            labelHeight.Location = new Point(144, 0);
             labelHeight.Name = "labelHeight";
-            labelHeight.Size = new Size(125, 20);
+            labelHeight.Size = new Size(98, 15);
             labelHeight.TabIndex = 4;
             labelHeight.Text = "Altura del recorte";
             // 
             // Visualize
             // 
-            Visualize.Location = new Point(102, 55);
-            Visualize.Margin = new Padding(3, 4, 3, 4);
+            Visualize.Location = new Point(89, 41);
             Visualize.Name = "Visualize";
-            Visualize.Size = new Size(86, 31);
+            Visualize.Size = new Size(75, 23);
             Visualize.TabIndex = 8;
             Visualize.Text = "Visualizar";
             Visualize.UseVisualStyleBackColor = true;
@@ -228,18 +217,17 @@
             // txtRuta
             // 
             txtRuta.AutoSize = true;
-            txtRuta.Location = new Point(3, 139);
+            txtRuta.Location = new Point(3, 104);
             txtRuta.Name = "txtRuta";
-            txtRuta.Size = new Size(200, 20);
+            txtRuta.Size = new Size(161, 15);
             txtRuta.TabIndex = 1;
             txtRuta.Text = "Ningun archivo seleccionado";
             // 
             // Save
             // 
-            Save.Location = new Point(3, 233);
-            Save.Margin = new Padding(3, 4, 3, 4);
+            Save.Location = new Point(3, 175);
             Save.Name = "Save";
-            Save.Size = new Size(86, 31);
+            Save.Size = new Size(75, 23);
             Save.TabIndex = 5;
             Save.Text = "Guardar";
             Save.UseVisualStyleBackColor = true;
@@ -247,10 +235,9 @@
             // 
             // loadPDF
             // 
-            loadPDF.Location = new Point(0, 55);
-            loadPDF.Margin = new Padding(3, 4, 3, 4);
+            loadPDF.Location = new Point(0, 41);
             loadPDF.Name = "loadPDF";
-            loadPDF.Size = new Size(86, 31);
+            loadPDF.Size = new Size(75, 23);
             loadPDF.TabIndex = 0;
             loadPDF.Text = "Subir PDF";
             loadPDF.UseVisualStyleBackColor = true;
@@ -264,7 +251,7 @@
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
-            toolStrip1.Size = new Size(845, 27);
+            toolStrip1.Size = new Size(739, 27);
             toolStrip1.TabIndex = 11;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -276,33 +263,33 @@
             toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
             toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            toolStripDropDownButton1.Size = new Size(34, 24);
+            toolStripDropDownButton1.Size = new Size(33, 24);
             // 
             // nuevoPdfToolStripMenuItem
             // 
             nuevoPdfToolStripMenuItem.Name = "nuevoPdfToolStripMenuItem";
-            nuevoPdfToolStripMenuItem.Size = new Size(273, 26);
+            nuevoPdfToolStripMenuItem.Size = new Size(218, 22);
             nuevoPdfToolStripMenuItem.Text = "Subir PDF";
             nuevoPdfToolStripMenuItem.Click += nuevoPdfToolStripMenuItem_Click;
             // 
             // opcionexToolStripMenuItem
             // 
             opcionexToolStripMenuItem.Name = "opcionexToolStripMenuItem";
-            opcionexToolStripMenuItem.Size = new Size(273, 26);
+            opcionexToolStripMenuItem.Size = new Size(218, 22);
             opcionexToolStripMenuItem.Text = "Opciones";
             opcionexToolStripMenuItem.Click += opcionexToolStripMenuItem_Click;
             // 
             // verArchivosDeRectangulosToolStripMenuItem
             // 
             verArchivosDeRectangulosToolStripMenuItem.Name = "verArchivosDeRectangulosToolStripMenuItem";
-            verArchivosDeRectangulosToolStripMenuItem.Size = new Size(273, 26);
+            verArchivosDeRectangulosToolStripMenuItem.Size = new Size(218, 22);
             verArchivosDeRectangulosToolStripMenuItem.Text = "Ver archivos de rectangulos";
             verArchivosDeRectangulosToolStripMenuItem.Click += verArchivosDeRectangulosToolStripMenuItem_Click;
             // 
             // monitoreoToolStripMenuItem
             // 
             monitoreoToolStripMenuItem.Name = "monitoreoToolStripMenuItem";
-            monitoreoToolStripMenuItem.Size = new Size(273, 26);
+            monitoreoToolStripMenuItem.Size = new Size(218, 22);
             monitoreoToolStripMenuItem.Text = "Monitoreo";
             monitoreoToolStripMenuItem.Click += monitoreoToolStripMenuItem_Click;
             // 
@@ -312,7 +299,7 @@
             abrirToolStripButton.Image = (Image)resources.GetObject("abrirToolStripButton.Image");
             abrirToolStripButton.ImageTransparentColor = Color.Magenta;
             abrirToolStripButton.Name = "abrirToolStripButton";
-            abrirToolStripButton.Size = new Size(29, 24);
+            abrirToolStripButton.Size = new Size(24, 24);
             abrirToolStripButton.Text = "&Abrir";
             abrirToolStripButton.Click += abrirToolStripButton_Click;
             // 
@@ -322,7 +309,7 @@
             guardarToolStripButton.Image = (Image)resources.GetObject("guardarToolStripButton.Image");
             guardarToolStripButton.ImageTransparentColor = Color.Magenta;
             guardarToolStripButton.Name = "guardarToolStripButton";
-            guardarToolStripButton.Size = new Size(29, 24);
+            guardarToolStripButton.Size = new Size(24, 24);
             guardarToolStripButton.Text = "&Guardar";
             // 
             // imprimirToolStripButton
@@ -331,7 +318,7 @@
             imprimirToolStripButton.Image = (Image)resources.GetObject("imprimirToolStripButton.Image");
             imprimirToolStripButton.ImageTransparentColor = Color.Magenta;
             imprimirToolStripButton.Name = "imprimirToolStripButton";
-            imprimirToolStripButton.Size = new Size(29, 24);
+            imprimirToolStripButton.Size = new Size(24, 24);
             imprimirToolStripButton.Text = "&Imprimir";
             // 
             // toolStripSeparator
@@ -345,7 +332,7 @@
             cortarToolStripButton.Image = (Image)resources.GetObject("cortarToolStripButton.Image");
             cortarToolStripButton.ImageTransparentColor = Color.Magenta;
             cortarToolStripButton.Name = "cortarToolStripButton";
-            cortarToolStripButton.Size = new Size(29, 24);
+            cortarToolStripButton.Size = new Size(24, 24);
             cortarToolStripButton.Text = "&Cortar";
             // 
             // copiarToolStripButton
@@ -354,7 +341,7 @@
             copiarToolStripButton.Image = (Image)resources.GetObject("copiarToolStripButton.Image");
             copiarToolStripButton.ImageTransparentColor = Color.Magenta;
             copiarToolStripButton.Name = "copiarToolStripButton";
-            copiarToolStripButton.Size = new Size(29, 24);
+            copiarToolStripButton.Size = new Size(24, 24);
             copiarToolStripButton.Text = "&Copiar";
             // 
             // pegarToolStripButton
@@ -363,7 +350,7 @@
             pegarToolStripButton.Image = (Image)resources.GetObject("pegarToolStripButton.Image");
             pegarToolStripButton.ImageTransparentColor = Color.Magenta;
             pegarToolStripButton.Name = "pegarToolStripButton";
-            pegarToolStripButton.Size = new Size(29, 24);
+            pegarToolStripButton.Size = new Size(24, 24);
             pegarToolStripButton.Text = "&Pegar";
             // 
             // toolStripSeparator1
@@ -377,22 +364,21 @@
             ayudaToolStripButton.Image = (Image)resources.GetObject("ayudaToolStripButton.Image");
             ayudaToolStripButton.ImageTransparentColor = Color.Magenta;
             ayudaToolStripButton.Name = "ayudaToolStripButton";
-            ayudaToolStripButton.Size = new Size(29, 24);
+            ayudaToolStripButton.Size = new Size(24, 24);
             ayudaToolStripButton.Text = "&Ayuda";
             // 
-            // Form1
+            // HarvestDesigner
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(845, 592);
+            ClientSize = new Size(739, 444);
             Controls.Add(toolStrip1);
             Controls.Add(tableLayoutPanel1);
             IsMdiContainer = true;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "Form1";
+            Name = "HarvestDesigner";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "HarvestDesigner";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             panel1.ResumeLayout(false);

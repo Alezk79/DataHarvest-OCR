@@ -2,10 +2,10 @@
 using Tesseract;
 namespace TextToDigitalCode
 {
-    public class Tesseract
+    public class DataExtractor
     {
 
-        public static string AplicarOCR(Image imagen, string tipo, string nombre)
+        public static string ExtractData(Image imagen, string tipo, string nombre)
         {
             AppSettings config = new AppSettings();
             config = ConfigManager.Read();
@@ -31,7 +31,7 @@ namespace TextToDigitalCode
                         {
                             // Escribir el texto reconocido en el archivo de salida
                             codigo = pagina.GetText();
-                            QRCoder.GenerarQR(codigo, outputFilePath);
+                            QRCoder.BuildQR(codigo, outputFilePath);
                         }
                     }
                 }

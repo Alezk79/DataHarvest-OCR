@@ -1,6 +1,6 @@
 ﻿namespace TextToDigitalCode
 {
-    partial class Form2
+    partial class Monitor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Monitor));
             toolStrip1 = new ToolStrip();
             toolStripDropDownButton1 = new ToolStripDropDownButton();
             nuevoPdfToolStripMenuItem = new ToolStripMenuItem();
@@ -469,7 +469,7 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Form2
+            // Monitor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -479,10 +479,10 @@
             Controls.Add(toolStrip1);
             ImeMode = ImeMode.Off;
             IsMdiContainer = true;
-            Name = "Form2";
+            Name = "Monitor";
             SizeGripStyle = SizeGripStyle.Show;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
+            Text = "Monitor";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);

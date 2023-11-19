@@ -4,10 +4,10 @@ using System.Diagnostics;
 
 namespace TextToDigitalCode
 {
-    public partial class Form2 : Form
+    public partial class Monitor : Form
     {
         AppSettings appSettings = new AppSettings();
-        public Form2()
+        public Monitor()
         {
             InitializeComponent();
             appSettings = ConfigManager.Read();
@@ -44,7 +44,7 @@ namespace TextToDigitalCode
 
         private void nuevoPdfToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenOrBringToFront(typeof(Form1));
+            OpenOrBringToFront(typeof(HarvestDesigner));
         }
 
         private void opcionexToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,8 +91,8 @@ namespace TextToDigitalCode
 
         private void button1_Click(object sender, EventArgs e)
         {
-             string folderPath = appSettings.MyPath;
-                       OpenFileDialog dlg = new OpenFileDialog
+            string folderPath = appSettings.MyPath;
+            OpenFileDialog dlg = new OpenFileDialog
             {
                 Filter = "JSON files (*.json)|*.json",
                 InitialDirectory = folderPath
@@ -143,7 +143,7 @@ namespace TextToDigitalCode
                 UpdateLabelSafe("En Ejecución...");
                 estadocolor.BackColor = Color.Green;
                 // Tu lógica de procesamiento aquí
-                MonitorearCarpeta.MonitorearFolder(appSettings.InputPath, rectanguloJson.Text);
+                WatcherFolder.WatchFolder(appSettings.InputPath, rectanguloJson.Text);
 
 
 

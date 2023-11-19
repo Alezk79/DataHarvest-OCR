@@ -1036,9 +1036,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soporte\\source\\repos\\CursoNE\\TextToDigitalCode\\TextToDigitalCode.csproj",
-      "projectName": "TextToDigitalCode",
-      "projectPath": "C:\\Users\\soporte\\source\\repos\\CursoNE\\TextToDigitalCode\\TextToDigitalCode.csproj",
+      "projectUniqueName": "C:\\Users\\soporte\\source\\repos\\CursoNE\\TextToDigitalCode\\DataHarvest-OCR.csproj",
+      "projectName": "DataHarvest-OCR",
+      "projectPath": "C:\\Users\\soporte\\source\\repos\\CursoNE\\TextToDigitalCode\\DataHarvest-OCR.csproj",
       "packagesPath": "C:\\Users\\soporte\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\soporte\\source\\repos\\CursoNE\\TextToDigitalCode\\obj\\",
       "projectStyle": "PackageReference",
