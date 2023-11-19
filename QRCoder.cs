@@ -8,19 +8,27 @@ namespace TextToDigitalCode
         AppSettings config = new AppSettings();
         public static Bitmap BuildQR(string datos, string path)
         {
-            QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode(datos, QRCodeGenerator.ECCLevel.Q);
-            QRCode qrCode = new QRCode(qrCodeData);
-            Bitmap qrCodeImage = qrCode.GetGraphic(20);
-            if (File.Exists(path))
+            try
             {
-                File.Delete(path);
+                QRCodeGenerator qrGenerator = new QRCodeGenerator();
+                QRCodeData qrCodeData = qrGenerator.CreateQrCode(datos, QRCodeGenerator.ECCLevel.Q);
+                QRCode qrCode = new QRCode(qrCodeData);
+                Bitmap qrCodeImage = qrCode.GetGraphic(20);
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                }
+                else
+                {
+                    qrCodeImage.Save(path);
+                }
+                return qrCodeImage;
             }
-            else
+            catch (Exception e)
             {
-                qrCodeImage.Save(path);
+
+                throw e;
             }
-            return qrCodeImage;
         }
 
     }
