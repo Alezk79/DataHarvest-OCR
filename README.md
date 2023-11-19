@@ -16,7 +16,7 @@ Windows 10/11.
 # Usage
 Template Creation: Open the Design Form, select a sample document, and use the rectangle tool to define the data extraction fields.
 Service Configuration: In the Service Screen, select your template and start the service for continuous data extraction and QR code generation.
-# ScreenShots
+# Screenshots
 ![image](https://github.com/Alezk79/DataHarvest-OCR/assets/92380895/6ce355e3-7399-4afa-8bec-48c2d81e040d)
 ![image](https://github.com/Alezk79/DataHarvest-OCR/assets/92380895/5ac89bd3-f31d-4ed6-8474-b143b5bcfbac)
 ![image](https://github.com/Alezk79/DataHarvest-OCR/assets/92380895/f2572aa8-b858-4742-b413-fd2880cd89c3)
