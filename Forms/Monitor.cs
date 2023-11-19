@@ -12,7 +12,7 @@ namespace TextToDigitalCode
             InitializeComponent();
             appSettings = ConfigManager.Read();
         }
-
+        #region toolBar
         private Form CheckIfFormIsOpen(Type formType)
         {
             foreach (Form openForm in Application.OpenForms)
@@ -83,13 +83,10 @@ namespace TextToDigitalCode
                 MessageBox.Show($"La carpeta no fue encontrada: {folderPath}", "Carpeta no encontrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        #endregion
 
-        private void rectanguloJson_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        #region Buttons
+        private void LoadRectangleButton_Click(object sender, EventArgs e)
         {
             string folderPath = appSettings.MyPath;
             OpenFileDialog dlg = new OpenFileDialog
@@ -120,17 +117,31 @@ namespace TextToDigitalCode
                 throw;
             }
         }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            if (!backgroundWorker1.IsBusy)
+                backgroundWorker1.RunWorkerAsync();
+            labelEstadoServicio.Text = "Iniciando...";
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            if (backgroundWorker1.WorkerSupportsCancellation)
+                backgroundWorker1.CancelAsync();
+            labelEstadoServicio.Text = "Deteniendo...";
+        }
+        #endregion
+
+        #region loadRectangle
         public RectangleDataModel LoadRectangleData(string filePath)
         {
             string jsonString = File.ReadAllText(filePath);
             return RectangleDataModel.FromJson(jsonString);
         }
+        #endregion
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #region BackGround Worker
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
 
@@ -176,19 +187,6 @@ namespace TextToDigitalCode
             }
         }
 
-        private void startButton_Click(object sender, EventArgs e)
-        {
-            if (!backgroundWorker1.IsBusy)
-                backgroundWorker1.RunWorkerAsync();
-            labelEstadoServicio.Text = "Iniciando...";
-        }
-
-        private void cancelButton_Click(object sender, EventArgs e)
-        {
-            if (backgroundWorker1.WorkerSupportsCancellation)
-                backgroundWorker1.CancelAsync();
-            labelEstadoServicio.Text = "Deteniendo...";
-        }
         private void UpdateLabelSafe(string text)
         {
             if (labelEstadoServicio.InvokeRequired)
@@ -200,10 +198,6 @@ namespace TextToDigitalCode
                 labelEstadoServicio.Text = text;
             }
         }
-
-        private void labelEstadoServicio_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

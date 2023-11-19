@@ -54,7 +54,7 @@
             startButton = new Button();
             rectanguloJson = new TextBox();
             label1 = new Label();
-            button1 = new Button();
+            LoadRectangleButton = new Button();
             Metadatos = new Panel();
             panel2 = new Panel();
             lbl_campo = new Label();
@@ -228,7 +228,7 @@
             panel1.Controls.Add(startButton);
             panel1.Controls.Add(rectanguloJson);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(LoadRectangleButton);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
@@ -252,7 +252,6 @@
             labelEstadoServicio.Size = new Size(54, 15);
             labelEstadoServicio.TabIndex = 6;
             labelEstadoServicio.Text = "detenido";
-            labelEstadoServicio.Click += labelEstadoServicio_Click;
             // 
             // label9
             // 
@@ -293,7 +292,6 @@
             rectanguloJson.ReadOnly = true;
             rectanguloJson.Size = new Size(189, 23);
             rectanguloJson.TabIndex = 2;
-            rectanguloJson.TextChanged += rectanguloJson_TextChanged;
             // 
             // label1
             // 
@@ -304,15 +302,15 @@
             label1.TabIndex = 1;
             label1.Text = "Seleccionar documento:";
             // 
-            // button1
+            // LoadRectangleButton
             // 
-            button1.Location = new Point(147, 32);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Seleccionar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            LoadRectangleButton.Location = new Point(147, 32);
+            LoadRectangleButton.Name = "LoadRectangleButton";
+            LoadRectangleButton.Size = new Size(75, 23);
+            LoadRectangleButton.TabIndex = 0;
+            LoadRectangleButton.Text = "Seleccionar";
+            LoadRectangleButton.UseVisualStyleBackColor = true;
+            LoadRectangleButton.Click += LoadRectangleButton_Click;
             // 
             // Metadatos
             // 
@@ -403,7 +401,6 @@
             label8.Size = new Size(48, 15);
             label8.TabIndex = 5;
             label8.Text = "Campo:";
-            label8.Click += label8_Click;
             // 
             // label7
             // 
@@ -532,7 +529,7 @@
         private Panel panel1;
         private TextBox rectanguloJson;
         private Label label1;
-        private Button button1;
+        private Button LoadRectangleButton;
         private OpenFileDialog openFileDialog1;
         private Panel Metadatos;
         private Panel panel2;

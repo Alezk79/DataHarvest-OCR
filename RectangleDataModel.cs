@@ -9,9 +9,7 @@ public class RectangleDataModel
     public int Height { get; set; }
     public float Scale { get; set; } // Nuevo campo para la escala
 
-    public string DocumentType { get; set; }  // Ejemplo: "Factura", "Producto"
-    public string FieldName { get; set; }     // Ejemplo: "Nombre", "Número de Lote"
-
+    public string DocumentType { get; set; }    public string FieldName { get; set; }    
 
     // Constructor
     public RectangleDataModel(int x, int y, int width, int height, string docType, string fieldName, float scale)

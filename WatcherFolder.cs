@@ -6,8 +6,8 @@ namespace TextToDigitalCode
     public class WatcherFolder
     {
 
-        public static void WatchFolder(string path, string rectangleDataPath)//rectanguloJson.Text
-        {
+        public static void WatchFolder(string path, string rectangleDataPath){
+
             if (!Directory.Exists(path))
             {
                 Console.WriteLine("El directorio no existe.");

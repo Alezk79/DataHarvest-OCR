@@ -17,7 +17,7 @@ namespace TextToDigitalCode
             // Configurar el motor de OCR con el idioma deseado (por ejemplo, "spa" para español)
             using (var engine = new TesseractEngine(@".\tessdata", "spa", EngineMode.Default))
             {
-                engine.SetVariable("tessedit_char_whitelist", "0123456789ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzáéíóú");
+                engine.SetVariable("tessedit_char_whitelist", "0123456789ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzáéíóúÁÉÍÓÚ");
 
                 // Iterar sobre todas las rutas de las imágenes
                 // Cargar la imagen desde la ruta especificada
