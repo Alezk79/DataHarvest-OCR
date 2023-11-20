@@ -34,7 +34,6 @@
             panel1 = new Panel();
             pdfOrigenImage = new PictureBox();
             panel2 = new Panel();
-            lbl_scale = new Label();
             campoLabel = new Label();
             campotxt = new TextBox();
             labelTipo = new Label();
@@ -113,7 +112,6 @@
             // 
             panel2.AutoSize = true;
             panel2.BackColor = SystemColors.ActiveCaption;
-            panel2.Controls.Add(lbl_scale);
             panel2.Controls.Add(campoLabel);
             panel2.Controls.Add(campotxt);
             panel2.Controls.Add(labelTipo);
@@ -131,24 +129,14 @@
             panel2.Size = new Size(364, 418);
             panel2.TabIndex = 7;
             // 
-            // lbl_scale
-            // 
-            lbl_scale.AutoSize = true;
-            lbl_scale.Location = new Point(-2, 27);
-            lbl_scale.Name = "lbl_scale";
-            lbl_scale.Size = new Size(39, 15);
-            lbl_scale.TabIndex = 13;
-            lbl_scale.Text = "Escala";
-            lbl_scale.Visible = false;
-            // 
             // campoLabel
             // 
             campoLabel.AutoSize = true;
             campoLabel.Location = new Point(3, 154);
             campoLabel.Name = "campoLabel";
-            campoLabel.Size = new Size(96, 15);
+            campoLabel.Size = new Size(70, 15);
             campoLabel.TabIndex = 12;
-            campoLabel.Text = "Nombre Campo:";
+            campoLabel.Text = "Field Name:";
             // 
             // campotxt
             // 
@@ -164,9 +152,9 @@
             labelTipo.AutoSize = true;
             labelTipo.Location = new Point(3, 125);
             labelTipo.Name = "labelTipo";
-            labelTipo.Size = new Size(115, 15);
+            labelTipo.Size = new Size(90, 15);
             labelTipo.TabIndex = 10;
-            labelTipo.Text = "Tipo de Documento:";
+            labelTipo.Text = "Template Name";
             // 
             // tipoDoctxt
             // 
@@ -210,7 +198,7 @@
             Visualize.Name = "Visualize";
             Visualize.Size = new Size(75, 23);
             Visualize.TabIndex = 8;
-            Visualize.Text = "Visualizar";
+            Visualize.Text = "View";
             Visualize.UseVisualStyleBackColor = true;
             Visualize.Click += Visualize_Click;
             // 
@@ -219,17 +207,17 @@
             txtRuta.AutoSize = true;
             txtRuta.Location = new Point(3, 104);
             txtRuta.Name = "txtRuta";
-            txtRuta.Size = new Size(161, 15);
+            txtRuta.Size = new Size(101, 15);
             txtRuta.TabIndex = 1;
-            txtRuta.Text = "Ningun archivo seleccionado";
+            txtRuta.Text = "None file selected";
             // 
             // Save
             // 
             Save.Location = new Point(3, 175);
             Save.Name = "Save";
-            Save.Size = new Size(75, 23);
+            Save.Size = new Size(96, 23);
             Save.TabIndex = 5;
-            Save.Text = "Guardar";
+            Save.Text = "Save Template";
             Save.UseVisualStyleBackColor = true;
             Save.Click += Save_Click;
             // 
@@ -239,7 +227,7 @@
             loadPDF.Name = "loadPDF";
             loadPDF.Size = new Size(75, 23);
             loadPDF.TabIndex = 0;
-            loadPDF.Text = "Subir PDF";
+            loadPDF.Text = "UploadPDF";
             loadPDF.UseVisualStyleBackColor = true;
             loadPDF.Click += loadPDF_Click;
             // 
@@ -425,6 +413,5 @@
         private TextBox campotxt;
         private ToolStripMenuItem verArchivosDeRectangulosToolStripMenuItem;
         private ToolStripMenuItem monitoreoToolStripMenuItem;
-        private Label lbl_scale;
     }
 }
