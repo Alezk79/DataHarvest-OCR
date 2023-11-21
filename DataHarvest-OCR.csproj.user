@@ -7,6 +7,9 @@
     <Compile Update="Forms\HarvestDesigner.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\MainContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Monitor.cs">
       <SubType>Form</SubType>
     </Compile>

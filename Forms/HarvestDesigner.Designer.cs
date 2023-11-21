@@ -85,7 +85,7 @@
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(739, 444);
+            tableLayoutPanel1.Size = new Size(854, 545);
             tableLayoutPanel1.TabIndex = 9;
             // 
             // panel1
@@ -95,7 +95,7 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(363, 418);
+            panel1.Size = new Size(421, 519);
             panel1.TabIndex = 6;
             // 
             // pdfOrigenImage
@@ -103,7 +103,7 @@
             pdfOrigenImage.Dock = DockStyle.Fill;
             pdfOrigenImage.Location = new Point(0, 0);
             pdfOrigenImage.Name = "pdfOrigenImage";
-            pdfOrigenImage.Size = new Size(363, 418);
+            pdfOrigenImage.Size = new Size(421, 519);
             pdfOrigenImage.SizeMode = PictureBoxSizeMode.Zoom;
             pdfOrigenImage.TabIndex = 2;
             pdfOrigenImage.TabStop = false;
@@ -124,9 +124,9 @@
             panel2.Controls.Add(Save);
             panel2.Controls.Add(loadPDF);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(372, 3);
+            panel2.Location = new Point(430, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(364, 418);
+            panel2.Size = new Size(421, 519);
             panel2.TabIndex = 7;
             // 
             // campoLabel
@@ -168,9 +168,9 @@
             // croppedImage
             // 
             croppedImage.Dock = DockStyle.Bottom;
-            croppedImage.Location = new Point(0, 198);
+            croppedImage.Location = new Point(0, 299);
             croppedImage.Name = "croppedImage";
-            croppedImage.Size = new Size(364, 220);
+            croppedImage.Size = new Size(421, 220);
             croppedImage.TabIndex = 0;
             croppedImage.TabStop = false;
             // 
@@ -239,7 +239,7 @@
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
-            toolStrip1.Size = new Size(739, 27);
+            toolStrip1.Size = new Size(854, 27);
             toolStrip1.TabIndex = 11;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -360,7 +360,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(739, 444);
+            ClientSize = new Size(854, 545);
             Controls.Add(toolStrip1);
             Controls.Add(tableLayoutPanel1);
             IsMdiContainer = true;
