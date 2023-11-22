@@ -29,67 +29,67 @@ namespace RuFramework.Config
         /// </summary>
         private void InitializeComponent()
         {
-            this.propertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItemOK = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemCancel = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip.SuspendLayout();
-            this.SuspendLayout();
+            propertyGrid = new PropertyGrid();
+            menuStrip = new MenuStrip();
+            toolStripMenuItemOK = new ToolStripMenuItem();
+            toolStripMenuItemCancel = new ToolStripMenuItem();
+            menuStrip.SuspendLayout();
+            SuspendLayout();
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.propertyGrid.Location = new System.Drawing.Point(0, 24);
-            this.propertyGrid.Name = "propertyGrid";
-            this.propertyGrid.Size = new System.Drawing.Size(800, 426);
-            this.propertyGrid.TabIndex = 0;
+            propertyGrid.Dock = DockStyle.Fill;
+            propertyGrid.Location = new Point(0, 24);
+            propertyGrid.Name = "propertyGrid";
+            propertyGrid.Size = new Size(800, 426);
+            propertyGrid.TabIndex = 0;
+            propertyGrid.Click += propertyGrid_Click;
             // 
             // menuStrip
             // 
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemOK,
-            this.toolStripMenuItemCancel});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip.TabIndex = 1;
-            this.menuStrip.Text = "menuStrip";
-            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
+            menuStrip.Items.AddRange(new ToolStripItem[] { toolStripMenuItemOK, toolStripMenuItemCancel });
+            menuStrip.Location = new Point(0, 0);
+            menuStrip.Name = "menuStrip";
+            menuStrip.Size = new Size(800, 24);
+            menuStrip.TabIndex = 1;
+            menuStrip.Text = "menuStrip";
+            menuStrip.ItemClicked += menuStrip_ItemClicked;
             // 
             // toolStripMenuItemOK
             // 
-            this.toolStripMenuItemOK.Name = "toolStripMenuItemOK";
-            this.toolStripMenuItemOK.Size = new System.Drawing.Size(34, 20);
-            this.toolStripMenuItemOK.Text = "Ok";
+            toolStripMenuItemOK.Name = "toolStripMenuItemOK";
+            toolStripMenuItemOK.Size = new Size(34, 20);
+            toolStripMenuItemOK.Text = "Ok";
+            toolStripMenuItemOK.Click += toolStripMenuItemOK_Click;
             // 
             // toolStripMenuItemCancel
             // 
-            this.toolStripMenuItemCancel.Name = "toolStripMenuItemCancel";
-            this.toolStripMenuItemCancel.Size = new System.Drawing.Size(55, 20);
-            this.toolStripMenuItemCancel.Text = "Cancel";
+            toolStripMenuItemCancel.Name = "toolStripMenuItemCancel";
+            toolStripMenuItemCancel.Size = new Size(55, 20);
+            toolStripMenuItemCancel.Text = "Cancel";
+            toolStripMenuItemCancel.Click += toolStripMenuItemCancel_Click;
             // 
             // AppSettingsDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.propertyGrid);
-            this.Controls.Add(this.menuStrip);
-            this.MainMenuStrip = this.menuStrip;
-            this.Name = "AppSettingsDialog";
-            this.Text = "AppSettingsDialog";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AppSettingsDialog_FormClosed);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(propertyGrid);
+            Controls.Add(menuStrip);
+            MainMenuStrip = menuStrip;
+            Name = "AppSettingsDialog";
+            Text = "AppSettingsDialog";
+            FormClosed += AppSettingsDialog_FormClosed;
+            menuStrip.ResumeLayout(false);
+            menuStrip.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOK;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemCancel;
-        public System.Windows.Forms.PropertyGrid propertyGrid;
+        private MenuStrip menuStrip;
+        private ToolStripMenuItem toolStripMenuItemOK;
+        private ToolStripMenuItem toolStripMenuItemCancel;
+        public PropertyGrid propertyGrid;
     }
 }

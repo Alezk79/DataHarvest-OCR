@@ -10,6 +10,9 @@
     <Compile Update="Forms\MainContainer.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Monitor.cs">
       <SubType>Form</SubType>
     </Compile>

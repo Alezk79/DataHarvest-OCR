@@ -1,3 +1,4 @@
+using DataHarvest;
 using Microsoft.Extensions.Configuration;
 
 namespace TextToDigitalCode

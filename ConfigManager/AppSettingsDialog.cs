@@ -1,9 +1,24 @@
-﻿namespace RuFramework.Config
+﻿using System.Drawing.Text;
+
+namespace RuFramework.Config
 {
     public partial class AppSettingsDialog : Form
     {
         string ConfigPath = null;
         public AppSettings AppSettingsOk = new AppSettings();
+
+        private static AppSettingsDialog instance = null;
+
+
+        public static AppSettingsDialog unic_window(AppSettings appSettings, AppDataPath appDataPath = AppDataPath.Roaming)
+        {
+            if (instance == null)
+            {
+                instance = new AppSettingsDialog(appSettings);
+                return instance;
+            }
+            return instance;
+        }
         /// <summary>
         /// Open the dialog with the Propertygrid.
         /// Select the Propertygrid on the config data.
@@ -14,8 +29,11 @@
         public AppSettingsDialog(AppSettings appSettings, AppDataPath appDataPath = AppDataPath.Roaming)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             propertyGrid.SelectedObject = appSettings;
             ConfigPath = ConfigManager.GetAppDataPath(appDataPath);
+
+
         }
 
         /// <summary>
@@ -50,6 +68,21 @@
         {
             // This data is returned
             AppSettingsOk = ConfigManager.Read(AppDataPath.Roaming);
+        }
+
+        private void toolStripMenuItemOK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItemCancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void propertyGrid_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
